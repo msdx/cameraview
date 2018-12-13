@@ -19,6 +19,7 @@ package com.google.android.cameraview.demo;
 import android.Manifest;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -273,6 +274,7 @@ public class MainActivity extends AppCompatActivity implements
                             }
                         }
                     }
+                    startActivity(new Intent(MainActivity.this, PictureActivity.class));
                 }
             });
         }
